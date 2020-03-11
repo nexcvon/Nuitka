@@ -1525,7 +1525,7 @@ constants_bin_filename = os.path.join(source_dir, "__constants.bin")
 if win_target:
     resource_mode = "win_resource"
 elif gcc_mode and getLinkerArch() is not None:
-    resource_mode = "linker"
+    resource_mode = "code"
 else:
     resource_mode = "code"
 
